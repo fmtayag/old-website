@@ -14,6 +14,10 @@ body {
   display: flex;
   justify-content: center;
   flex: 1;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
 }
 
 .nav-links {
@@ -49,6 +53,10 @@ body {
   display: flex;
   justify-content: center;
   flex: 1;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
 }
 
 .highlight {
@@ -96,6 +104,7 @@ p {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 
 .list-bulletless li {
@@ -134,6 +143,12 @@ p {
     flex-direction: column;
   }
 
+  .navbar-wrapper {
+    position: -webkit-relative; /* Safari */
+    position: relative;
+    align-self: stretch;
+  }
+
   .main-wrapper {
     padding: 16px;
   }
@@ -142,6 +157,7 @@ p {
     display: inline-block;
     margin: 16px;
   }
+
   .aside-wrapper {
     display: none;
   }
