@@ -166,3 +166,7 @@ img.zoomable {
 img.zoomable:hover {
   transform: scale(1.5);
 }
+
+footer p {
+  color: gray;
+}
