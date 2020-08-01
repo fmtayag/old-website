@@ -16,10 +16,6 @@ body {
   display: flex;
   justify-content: center;
   flex: 1;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
 }
 
 .nav-links {
@@ -55,10 +51,6 @@ body {
   display: flex;
   justify-content: center;
   flex: 1;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
 }
 
 .highlight {
