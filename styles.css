@@ -1,0 +1,44 @@
+/***********/
+/* Flexbox */
+/***********/
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: auto;
+}
+
+div.navbar {
+    flex-grow: 1;
+}
+
+div.main {
+    flex-grow: 6;
+}
+
+div.aside {
+    flex-grow: 1;
+}
+
+/***********/
+/* Texts   */
+/***********/
+p {
+    color: rgb(27,31,33);
+    font-family: 'Press Start 2P', cursive;
+}
+p.centered { text-align: center; }
+p.large { font-size: 1.5em; }
+p.medium { font-size: 1em; }
+p.small { font-size: 0.5em; }
+p.orange { color: rgb(255,137,51); }
+
+a {
+    color: rgb(27,31,33);
+    font-weight: 1000;
+    text-decoration: none;
+}
+a:hover { color: rgb(255,137,51); }
+a.underline { border-bottom: 0.25em solid rgb(255,137,51); }
