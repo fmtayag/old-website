@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home | Zyenapz</title>
+        <title></title>
 
+        <!-- Meta Stuff-->
         <meta charset="utf-8">
         <meta name="description" content="Zyenapz's Website">
         <meta name="author" content="Zyenapz">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
 
+        <!-- CSS and styles-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+
     </head>
     <body>
         <div class="container">
-            <div class="navbar">
+            <!-- Navigation Bar -->
+            <div id="navbar" class="navbar"></div>
+            
+            <!-- Main Body -->
+            <div id="main" class="main">
+                <div class="article">
+
+                    <div>
+                        <h1>About me</h1>
+                        <img class="floated margin-bottom margin-right" src="profile.png" width="128px" height="128px">
+                        <p>I'm a college sophomore pursuing my undergraduate degree in Computer Science. Also, I'm an aspiring game developer and pixel artist who lives in Laguna, Philippines. Aside from making video games, I also make modifications (mods) for various games such as Counter-Strike, Ace of Spades, and the early Doom titles. I am active on <a href="https://zyenapz.itch.io/" target="_blank">itch.io</a> and have currently published 2 games on the platform, those being: <a href="https://zyenapz.itch.io/star-fighter" target="_blank">Star Fighter</a> and <a href="https://zyenapz.itch.io/yukon-escape" target="_blank">Yukon Escape</a>.</p>
+                        <p>I also write blogs detailing development processes, my learnings, and sometimes, blog posts that are random. Anyways, thank you for checking out my website and of course, please enjoy your stay!</p>
+                    </div>
+
+                    <div class="flex-row">
+                        <div style="flex-grow: 1;">
+                            <h1>Featured blogs</h1>
+                            <ul>
+                                <p>There seems to be no blogs yet...</p>
+                            </ul>
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <h1>Other webpages</h1>
+                            <ul>
+                                <li><p><a href="https://github.com/zyenapz" target="_blank">My GitHub page</a></p></li>
+                                <li><p><a href="https://gamebanana.com/members/1680259" target="_blank">My Gamebanana page</a></p></li>
+                                <li><p><a href="https://zyenapz.itch.io/" target="_blank">My Itch.io page</a></p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="main">
-                <p class="large centered">Whoops!</p>
-                <p class="large centered">Website under construction.</p>
-                <p class="large centered">Sorry about that!</p>
-                <br>
-                <p class="large centered">My other webpages:</p>
-                <p class="large centered" ><a class="underline" href="https://github.com/zyenapz" target="_blank">GitHub</a></p>
-                <p class="large centered" ><a class="underline" href="https://gamebanana.com/members/1680259" target="_blank">Gamebanana</a></p>
-                <p class="large centered" ><a class="underline" href="https://zyenapz.itch.io/" target="_blank">Itch.io</a></p>
-                <p class="centered">
-                    <img src="profile.png" width="128em" height="128em">
-                </p>
-                
-            </div>
-            <div class="aside">
-            </div>
+
+            <!-- Footer -->
+            <div id="footer"></div>
         </div>
+
+        <!-- Javascript Stuff -->
+        <script type="text/javascript" src="js/main.js"></script>  
     </body>
 </html>
