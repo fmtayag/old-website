@@ -33,7 +33,7 @@ function append_title() {
 function append_navbar() {
     
     const pages = {
-        "home": "index.html",
+        "home": "zyenapz.github.io",
         "games": "games.html",
         "blogs": "blogs.html"
     }
