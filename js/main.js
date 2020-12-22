@@ -23,9 +23,9 @@ function append_font() {
 function append_navbar() {
     
     const pages = {
-        "home": "index.html",
-        "games": "games.html",
-        "blogs": "blogs.html"
+        "home": "index",
+        "games": "games",
+        "blogs": "blogs"
     }
 
     let nav = document.createElement("nav");
