@@ -22,12 +22,12 @@ function append_font() {
 
 function append_title() {
     var txt = cur_page.replace(".html", "");
-    if(txt == "index") {
-        txt = "Home";
+    if(txt != "index") {
+        let title = document.querySelector("title");
+        let t_title = document.createTextNode(capitalize(txt) + " | Zyenapz");
+        title.appendChild(t_title);
     }
-    let title = document.querySelector("title");
-    let t_title = document.createTextNode(capitalize(txt) + " | Zyenapz");
-    title.appendChild(t_title);
+    
 }
 
 function append_navbar() {
@@ -35,12 +35,18 @@ function append_navbar() {
     const pages = {
         "home": "index.html",
         "games": "games.html",
-        "works": "works.html",
-        "blogs": "blogs.html",
-        "contact": "contact.html"
+        "blogs": "blogs.html"
     }
 
     let nav = document.createElement("nav");
+
+    // Append logo
+    let n_logo = document.createElement("p");
+    let t_logo = document.createTextNode("zyenapz | ");
+    n_logo.appendChild(t_logo);
+    nav.appendChild(n_logo);
+
+    // Append navbar
     Object.keys(pages).forEach(key => {
         let n_link = document.createElement("a");
         let t_link = document.createTextNode(capitalize(key));

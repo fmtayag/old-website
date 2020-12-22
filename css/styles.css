@@ -35,7 +35,6 @@ div.aside {
 }
 
 div.article {
-    border-left: 0.5em solid rgb(255,137,51);
     padding-left: 1em;
 }
 
@@ -45,15 +44,19 @@ div.flex-row {
     justify-content: center;
 }
 
+div.gray-bg {
+    background-color: whitesmoke;
+}
+
 /********************/
 /* Texts            */
 /********************/
 
-p, h1 {
+p, h1, h2, h3 {
     font-family: 'Lato', sans-serif;
 }
 
-p {
+p, h2, h3 {
     color: rgb(27,31,33);
     line-height: 2em;
 }
@@ -65,6 +68,7 @@ p.large { font-size: 1.25em; }
 p.medium { font-size: 0.75em; }
 p.small { font-size: 0.5em; }
 p.orange { color: rgb(255,137,51); }
+p.gray { color: rgb(163,167,194); }
 a {
     color: rgb(27,31,33);
     font-weight: 1000;
@@ -77,6 +81,13 @@ a.active { color: rgb(255,137,51); }
 h1 { color: rgb(255,137,51); }
 h1.large { font-size: 1.5em; }
 
+h2.logo {
+    text-align: center;
+    margin: 0;
+}
+
+.no-margin { margin: 0; }
+.no-padding { padding: 0; }
 /********************/
 /* Images           */
 /********************/
@@ -86,9 +97,68 @@ img.floated {
 }
 
 img.margin-right {
-    margin-right: 1.25em;;
+    margin-right: 1.25em;
 }
 
 img.margin-bottom {
     margin-bottom: 1.25em;
+}
+
+img.margin-top {
+    margin-top: 1em;
+}
+
+img {
+    transition: 0.25s;
+}
+
+img.margin-small {
+    margin: 1em;
+}
+
+img.margin-noleft {
+    margin-left: 0;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/********************/
+/* List             */
+/********************/
+
+ul {
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+/********************/
+/* Media queries    */
+/********************/
+
+@media only screen and (max-width: 500px) {
+    div.container {
+        width: 100%;
+    }
+    ul {
+        padding: 0;
+    }
+    p {
+        font-size: 1.25em;
+    }
+}
+
+/********************/
+/* Others           */
+/********************/
+
+span {
+    padding: 1em;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: rgb(255,137,51);
 }
