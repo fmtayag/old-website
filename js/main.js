@@ -20,20 +20,10 @@ function append_font() {
     head.appendChild(n_link);
 }
 
-function append_title() {
-    var txt = cur_page.replace(".html", "");
-    if(txt != "index") {
-        let title = document.querySelector("title");
-        let t_title = document.createTextNode(capitalize(txt) + " | Zyenapz");
-        title.appendChild(t_title);
-    }
-    
-}
-
 function append_navbar() {
     
     const pages = {
-        "home": "https://zyenapz.github.io/",
+        "home": "index.html",
         "games": "games.html",
         "blogs": "blogs.html"
     }
@@ -86,7 +76,6 @@ document.onload = do_initialize();
 
 function do_initialize() {
     append_font();
-    append_title();
     append_navbar();
     append_footer();
 }
