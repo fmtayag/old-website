@@ -22,7 +22,7 @@ function append_font() {
 
 function append_title() {
     var txt = cur_page.replace(".html", "");
-    if(txt != "index") {
+    if(txt != "index" or txt != "") {
         let title = document.querySelector("title");
         let t_title = document.createTextNode(capitalize(txt) + " | Zyenapz");
         title.appendChild(t_title);
